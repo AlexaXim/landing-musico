@@ -43,12 +43,11 @@ h3 {
     color: #fae1cb;
     font-size: 3rem;
     font-weight: 500;
-    margin-bottom: 25px;
 }
 body > header {
     background-image:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
-        url(img/banner-andrews.png);
+        url(img/inicia\ musica.jpg);
 
     width: 100%;
     height: 100vh;
@@ -71,62 +70,59 @@ header > hgroup {
     padding: 0 10%;
     text-align: center;
 }
-section {
-    display: flex;
-    flex-direction: column;
-    padding: 120px 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-main > section > header {
-    display: flex;
-    flex-direction: column;
-    gap: 5dvh;
-}
-.cards {
-    display: flex;
-    gap: 30px;
-    margin-top: 50px;
+section{
+    display:flex;
+    flex-direction:column;
+    padding:120px 5%;
+    max-width:1400px;
+    gap:50px;
 }
 
-.cards .card {
-    flex: 1;
-    background-color: #242424;
-    border-radius: 15px;
-    padding: 35px 25px;
-    text-align: center;
-    transition: 0.3s;
+main{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.cards{
+    display:flex;
+    gap:30px;
 }
 
-.cards .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+.cards .card{
+    flex:1;
+    background-color:#242424;
+    border-radius:15px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.3s;
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
-.cards .card h4 {
-    color: #fae1cb;
-    font-size: 1.7rem;
-    margin-bottom: 20px;
+.cards .card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
 }
 
-.cards .card p {
-    line-height: 1.8;
-    color: rgba(255,255,255,.8);
+.cards .card h4{
+    color:#fae1cb;
+    font-size:1.7rem;
 }
 
 hr{
     border: none;
     height: 1px;
     background-color: rgba(255,255,255,.2);
-    margin: 50px 0;
 }
 
-main > section > header > p{
-    text-align: center;
-    font-size: 1.2rem;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.8;
+main > section > header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5dvh;
     color: rgba(255,255,255,.8);
 }
 
@@ -137,21 +133,18 @@ main{
     display:flex;
     align-items:center;
     gap:60px;
-    margin-top:60px;
 }
 
 .trayectoria-texto{
     flex:1;
-}
-
-.item{
-    margin-bottom:45px;
+    display:flex;
+    flex-direction:column;
+    gap:45px;
 }
 
 .item h4{
     color:#fae1cb;
     font-size:1.6rem;
-    margin-bottom:15px;
     text-align:left;
 }
 
@@ -159,10 +152,6 @@ main{
     line-height:1.8;
     color:rgba(255,255,255,.8);
     text-align:left;
-}
-
-.trayectoria-imagen{
-    flex:1;
 }
 
 .trayectoria-imagen{
@@ -192,8 +181,6 @@ main{
 
     min-height: 100vh;
 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -217,13 +204,13 @@ main{
 }
 
 .contenido-logros{
-    position: relative;
-    z-index: 2;
+    width:100%;
+    max-width:1200px;
 
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:60px;
 }
 
 .estadisticas{
@@ -232,7 +219,6 @@ main{
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 60px;
 }
 
 .numero{
@@ -245,8 +231,6 @@ main{
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
-
     background: rgba(30,30,30,.45);
     backdrop-filter: blur(10px);
 
@@ -257,11 +241,10 @@ main{
 }
 
 .numero h2{
-    font-size: 2.6rem;
-    font-weight: 500;
-    margin-bottom: 12px;
-    line-height: 1;
-    color: #fae1cb;
+    font-size:2.6rem;
+    font-weight:500;
+    line-height:1;
+    color:#fae1cb;
 }
 
 .numero p{
@@ -273,7 +256,6 @@ main{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
-    margin-top:60px;
 }
 
 .proyecto{
@@ -297,11 +279,14 @@ main{
 .proyecto .contenido{
     padding:25px;
     text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
 .proyecto h4{
     color:#fae1cb;
-    margin-bottom:15px;
     text-align:center;
 }
 
@@ -366,9 +351,9 @@ nav a:hover::after{
 nav a:hover{
     color:#fae1cb;
 }
+
 .btn{
     display:inline-block;
-    margin-top:20px;
     padding:15px 35px;
 
     background:#fae1cb;
@@ -379,58 +364,25 @@ nav a:hover{
 
     border-radius:50px;
 
-    transition:.3s;
-}
-
-header .btn{
     margin-top:40px;
+
+    transition:.3s;
 }
 
 .btn:hover{
     background:white;
     transform:translateY(-3px);
 }
-.cita{
-    background:
-        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-        url("img/banner-andrews.png");
 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    min-height: 70vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-}
-
-.cita-contenido{
-    max-width: 900px;
-    padding: 0 30px;
-}
-
-.cita h2{
-    font-size: clamp(2rem,4vw,3.5rem);
-    color: white;
-    font-style: italic;
-    line-height: 1.5;
-}
-
-.cita p{
-    margin-top: 35px;
-    color: #fae1cb;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-}
 footer{
-    margin-top:120px;
+    width:100%;
     padding:70px 8%;
 
     background:#161616;
+
+    display:flex;
+    flex-direction:column;
+    gap:40px;
 
     text-align:center;
 }
@@ -438,112 +390,80 @@ footer{
 footer h3{
     color:#fae1cb;
     font-size:2rem;
-    margin-bottom:20px;
 }
 
 footer p{
     color:rgba(255,255,255,.75);
 }
 
-.footer-links{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-
-    margin:35px 0;
-}
-
-.footer-links a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.footer-links a:hover{
-    color:#fae1cb;
-}
-
 .copyright{
-    margin-top:40px;
     font-size:.9rem;
     color:rgba(255,255,255,.5);
 }
+
 .galeria{
-    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
 }
 
 .galeria img{
     width:80%;
     max-width:900px;
     border-radius:20px;
-    margin-top:40px;
     box-shadow:0 10px 30px rgba(0,0,0,.35);
+.carrusel-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
+    position: relative;
 }
-    .carrusel-video{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:40px;
-    margin-top:50px;
-
-    position:relative;
 }
-
-.carrusel-video iframe{
-    width:90%;
-    max-width:1300px;
-    aspect-ratio:16/9;
-
-    border:none;
-    border-radius:20px;
-
-    opacity:1;
-    transition:opacity .35s ease;
-
-    position:relative;
-    z-index:1;
-}
-
-.carrusel-video iframe.oculto{
-    opacity:0;
-}
-
 .carrusel-video button{
-    background: transparent;
-    border: none;
-    cursor: pointer;
+    background:none;
+    border:none;
 
-    font-size: 4rem;
-    color: #fae1cb;
+    color:#fae1cb;
+    font-size:5rem;
+    font-weight:bold;
 
-    text-shadow: 0 0 15px rgba(0,0,0,.8);
-
-    transition: .3s;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .carrusel-video button:hover{
-    color: white;
-    transform: scale(1.15);
-    text-shadow: 0 0 25px rgba(250,225,203,.8);
+    color:white;
+    transform:scale(1.2);
+}
+
+#imagenCarrusel{
+    width: 900px;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+
+    z-index: 1;
 }
 
 .carrusel-video::before{
-    content:"♪ ♫ ♪ ♫ ♪ ♫";
+    content: "♪ ♫ ♪ ♫ ♪ ♫";
 
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    font-size:6rem;
-    letter-spacing:40px;
+    font-size: 6rem;
+    letter-spacing: 40px;
 
-    color:rgba(250, 225, 203, .8);
+    color: rgba(250,225,203,.08);
 
-    z-index:0;
-
-    pointer-events:none;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .footer-contenido{
@@ -551,7 +471,6 @@ footer p{
     grid-template-columns:repeat(4,1fr);
     gap:50px;
 
-    margin:60px 0;
     padding-top:40px;
 
     border-top:1px solid rgba(255,255,255,.15);
@@ -561,23 +480,12 @@ footer p{
     display:flex;
     flex-direction:column;
     gap:15px;
+    align-items:flex-start;
 }
-
-.footer-columna h4{
-    color:#fae1cb;
-    margin-bottom:15px;
-    text-align:left;
-}
-
-.footer-columna p{
-    text-align:left;
-}
-
 .footer-columna a{
     color:white;
     text-decoration:none;
     transition:.3s;
-    text-align:left;
 }
 
 .footer-columna a:hover{
@@ -605,50 +513,10 @@ footer p{
     text-shadow:0 5px 15px rgba(0,0,0,.6);
 }
 
-.colaboraciones-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:35px;
-    margin-top:60px;
-}
-
-.colaboracion{
-    background:#242424;
-    border-radius:20px;
-    overflow:hidden;
-    transition:.3s;
-}
-
-.colaboracion:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,.35);
-}
-
-.colaboracion img{
-    width:100%;
-    height:240px;
-    object-fit:cover;
-}
-
-.colaboracion .contenido{
-    padding:25px;
-    text-align:center;
-}
-
-.colaboracion h4{
-    color:#fae1cb;
-    margin-bottom:15px;
-}
-
-.colaboracion p{
-    line-height:1.7;
-    color:rgba(255,255,255,.8);
-}
 .portafolio-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:35px;
-    margin-top:60px;
 }
 
 .tarjeta-hito{
@@ -673,7 +541,6 @@ footer p{
 
 .frente,
 .detras{
-
     position:absolute;
 
     width:100%;
@@ -687,6 +554,7 @@ footer p{
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    gap:20px;
 
     padding:30px;
 
@@ -697,7 +565,6 @@ footer p{
 
 .frente h4{
     color:#fae1cb;
-    margin-top:20px;
     font-size:2rem;
 }
 
@@ -716,7 +583,6 @@ footer p{
 
 .detras p{
     line-height:1.8;
-    margin-bottom:25px;
 }
 
 .detras span{

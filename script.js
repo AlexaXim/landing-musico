@@ -1,47 +1,43 @@
-const videos = [
-    "x7nk-2TMx7c",
-    "0MhrxUJjMW0",
-    "aZVFu2hQAWY"
+const imagenes = [
+    "img/Insertar video 1.jpg",
+    "img/Insertar video 2.png",
+    "img/Insertar video 3.png"
 ];
 
 let actual = 0;
 
-const iframe = document.getElementById("youtubeVideo");
+const imagen = document.getElementById("imagenCarrusel");
 const siguiente = document.getElementById("siguiente");
 const anterior = document.getElementById("anterior");
 
-function cambiarVideo() {
-    iframe.classList.add("oculto");
+// Carrusel de imágenes
+if (imagen && siguiente && anterior) {
 
-    setTimeout(() => {
-        iframe.src = "https://www.youtube.com/embed/" + videos[actual];
+    function cambiarImagen() {
+        imagen.src = imagenes[actual];
+    }
 
-        iframe.onload = () => {
-            iframe.classList.remove("oculto");
-        };
-    }, 250);
+    siguiente.addEventListener("click", () => {
+        actual = (actual + 1) % imagenes.length;
+        cambiarImagen();
+    });
+
+    anterior.addEventListener("click", () => {
+        actual = (actual - 1 + imagenes.length) % imagenes.length;
+        cambiarImagen();
+    });
 }
 
-siguiente.addEventListener("click", () => {
-    console.log("Click siguiente");
-    actual = (actual + 1) % videos.length;
-    cambiarVideo();
-});
-
-anterior.addEventListener("click", () => {
-    console.log("Click anterior");
-    actual = (actual - 1 + videos.length) % videos.length;
-    cambiarVideo();
-});
+// Tarjetas del portafolio
 const tarjetas = document.querySelectorAll(".tarjeta-hito");
 
 let abierta = null;
 
-tarjetas.forEach(tarjeta=>{
+tarjetas.forEach(tarjeta => {
 
-    tarjeta.addEventListener("click",()=>{
+    tarjeta.addEventListener("click", () => {
 
-        if(abierta && abierta!==tarjeta){
+        if (abierta && abierta !== tarjeta) {
             abierta.classList.remove("activa");
         }
 
